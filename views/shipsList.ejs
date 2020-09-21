@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIRATES X MARINE!!! : Ships List</title>
+    <style>
+        body {
+            font-family: "Avenir", sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        th,td {
+            padding : 10px;
+        }
+        thead {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>SHIPS</h1>
+    <p>This is Ships list!</p>
+    
+    <a href="/">Home</a>
+    <a href="/pirates">Pirates List</a>
+    <a href="/pirates/add">Add Pirate</a>
+    <a href="/ships">Ships List</a>
+    <a href="/ships/add">Add Ship</a>
+    
+    <!-- <h2>This is ships list</h2> -->
+    <!-- <%= ships %> -->
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Power</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% ships.forEach(ships => { %>
+                <tr>
+                    <td><%= ships.id %></td>
+                    <td><%= ships.name %></td>
+                    <td><%= ships.type %></td>
+                    <td><%= ships.power %></td>
+                    <td><a href="ships/delete/ <%= ships.id %>">Delete</a></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

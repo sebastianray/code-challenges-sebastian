@@ -1,0 +1,12 @@
+[
+    {
+      "name": "Going Merry",
+      "type": "Caravel",
+      "power": 95
+    },
+    {
+      "name": "Dreadnaught Sabre",
+      "type": "Galleon",
+      "power": 93
+    }
+]
